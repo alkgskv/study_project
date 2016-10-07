@@ -16,10 +16,13 @@ body {
 	background: url(../img/background.jpg);
 	background-position: top center;
 	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 87.5%;
 	letter-spacing: 1px;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -90,7 +93,7 @@ li.enter a, li.enter a:hover{
 	left: 0;
 }
 .form {
-	margin: 13.5% auto ;
+	margin: 10% auto ;
 	max-width: 560px;
 	padding-bottom: 62px;
 	height: 613px;
