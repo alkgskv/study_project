@@ -1,0 +1,236 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, .enter, .offers {
+	display: block;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+	line-height: 1;
+	background: url(../img/background.jpg);
+	background-position: top center;
+	background-attachment: fixed;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 87.5%;
+	letter-spacing: 1px;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header {
+	background: #074c89;
+	position: relative;
+	z-index: 1;
+}
+header:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('data:image/png;base64,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') ;
+}
+nav{
+	float: right;
+	margin-right: 20px;
+}
+nav li {
+	float: left;
+}
+nav li a:hover {
+	background: #4eabda;
+	color: #fff;
+}
+li a {
+	padding: 10px 14px;
+	color: #60b5ed;
+	display: block;
+}
+li.enter a, li.enter a:hover{
+	background: linear-gradient(to top, #2a7ab5, #51b1dc);
+	color: #fff;
+}
+.offers a, .offers a:hover{
+	position: relative;
+	padding-left: 48px;
+	background: url(../img/flag.png) 10% 50% no-repeat;
+	color: #fff;
+}
+.offers a:before {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 31px;
+	background-color: #56a2dc;
+	top: 2px;
+	left: 0;
+}
+.form {
+	margin: 13.5% auto ;
+	max-width: 560px;
+	padding-bottom: 62px;
+	height: 613px;
+	background: rgba(0, 0, 0, .63);
+}
+.title h3 {
+	padding: 20px 0;
+	font-size: 180%;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #fff;
+	border-bottom: 2px solid #b0b9a4;
+	text-align: center;
+}
+.account {
+	width: 279px;
+	margin: 0 auto;
+	text-align: center;
+}
+.button {
+	margin: 36px 0 33px;
+	width: 100%;
+	border: none;
+	border-top: 1px solid #758ab7;
+	border-radius: 3px;
+	background: linear-gradient( to top, #304272, #3d5792);
+	color: #fff;
+	display: table;
+	text-shadow: -1px -1px 1px rgba(0,0,0,.5);
+}
+.button .icon-fb {
+	padding: 7px 11px;
+	position: relative;
+	display: table-cell;
+	font-size: 22px;
+	vertical-align: middle;
+}
+.button .login {
+	padding-left: 25px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.login .fa-chevron-right {
+	padding-left: 18px;
+}
+.button .icon-fb:before {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 107%;
+	background-color: #1f3c76;
+	border-right: 1px solid #4d66a6;
+	top: -2px;
+	right: 0;
+}
+.head-bg {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.head-bg h5 {
+	text-shadow: none;
+	color: #666;
+	margin: 5px;
+	display: inline;
+}
+.head-bg:before {
+	content: '';
+	position: absolute;
+	width: 125px;
+	height: 1px;
+	background-color: #666;
+	border-bottom: 1px solid #000;
+	top: 50%;
+	left: 0;
+}
+.head-bg:after {
+	content: '';
+	position: absolute;
+	width: 125px;
+	height: 1px;
+	background-color: #666;
+	border-bottom: 1px solid #000;
+	top: 50%;
+	right: 0;
+}
+input[type="text"] {
+	width: 100%;
+	margin-bottom: 19px;
+	padding: 12px 18px;
+	background: linear-gradient(to top, #111111, #0e0d0d);
+	font-size: 100%;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #494949;
+	box-sizing: padding-box;
+	box-shadow: inset 2px 2px 5px rgba(29,26,22,.2);
+}
+input[type="text"]:focus {
+	background: #1b5288;
+	box-shadow: inset 2px 2px 5px rgba(29,26,22,.2),
+				rgba(104,155,204,1) 0 0 4px,
+				rgba(47,123,197,.85) 0 0 12px;
+	border-bottom: 1px solid #689bcc;
+}
+label{
+	text-align: left;
+	color: #fff;
+	text-shadow: none;
+	padding-bottom: 1px;
+	display: block;
+	float: left;
+}
+input[type="checkbox"] {
+	margin-right: 8px;
+	padding-bottom: -1px;
+	display: block;
+	float: left;
+}
+.check-label {
+	margin-bottom: 24px;
+	
+}
+.check-label label {
+	color: #cccccc;
+}
+.create {
+	padding: 10px;
+	background: linear-gradient(to top, #2e7ac4, #50aedb);
+	border: 1px solid #50aedb;
+	border-top: 1px solid #6bb8e7;
+	border-radius: 3px;
+	font-size: 100%;
+	color: #fff;
+	text-shadow: 0px 0px 1px #aaa;
+}
+.descr {
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 80%;
+	color: #cccccc;
+	text-shadow: none;
+}
